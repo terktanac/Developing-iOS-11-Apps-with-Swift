@@ -13,7 +13,9 @@ struct Concentration {
     
     private(set) var flips: Int
     
-    private(set) var scores: Int
+    private(set) var score: Int
+    
+    private var seenCards = [Card]()
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
@@ -34,7 +36,14 @@ struct Concentration {
                 if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatch = true
                     cards[index].isMatch = true
-                    scores += 2
+                    score += 2
+                }
+                else {
+                    if seenCards.contains(cards[index]) || seenCards.contains(cards[matchIndex]) {
+                        score -= 1
+                    }
+                    seenCards += [cards[index]]
+                    seenCards += [cards[matchIndex]]
                 }
                 cards[index].isFaceUp = true
             }
@@ -57,7 +66,8 @@ struct Concentration {
         }
         indexOfOneAndOnlyFaceUpCard = nil
         flips = 0
-        scores = 0
+        score = 0
+        seenCards = []
     }
     
     init(numberOfPairCards: Int) {
@@ -69,7 +79,7 @@ struct Concentration {
         }
         cards.shuffle()
         flips = 0
-        scores = 0
+        score = 0
     }
     
 }

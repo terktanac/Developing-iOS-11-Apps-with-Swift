@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             }
         }
         flipCount = game.flips
-        score = game.scores
+        score = game.score
     }
     
     private var themes = ["🎃👻💀👽😈👹👺☠️","🐶🐱🐭🐹🐰🦊🐻🐯","🐙🦑🦐🦞🐠🐟🐳🦀","⚽️🏀🏈⚾️🎾🏐🏉🎱"]
