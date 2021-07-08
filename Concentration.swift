@@ -15,7 +15,7 @@ struct Concentration {
     
     private(set) var score: Int
     
-    private var seenCards = [Card]()
+    private var seenCards = [Int]()
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
@@ -39,11 +39,11 @@ struct Concentration {
                     score += 2
                 }
                 else {
-                    if seenCards.contains(cards[index]) || seenCards.contains(cards[matchIndex]) {
+                    if seenCards.contains(index) || seenCards.contains(matchIndex) {
                         score -= 1
                     }
-                    seenCards += [cards[index]]
-                    seenCards += [cards[matchIndex]]
+                    seenCards += [index]
+                    seenCards += [matchIndex]
                 }
                 cards[index].isFaceUp = true
             }
