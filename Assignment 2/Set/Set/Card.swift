@@ -6,13 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
-struct Card {
+struct Card: Equatable, Hashable {
     
-    var isFaceUp = false
+    var isSelected = false
+    
+    var isShowed = false
+    
+    var value: CardValue?
+    
+    private var id: String
     
     init() {
-        
+        self.id = UUID().uuidString
     }
     
 }

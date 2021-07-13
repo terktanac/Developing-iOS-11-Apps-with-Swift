@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Card: Hashable {
+struct Card: Hashable, Equatable, Codable {
     
     var isFaceUp = false
     var isMatch = false

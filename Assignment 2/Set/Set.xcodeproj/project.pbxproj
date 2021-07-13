@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC216CEA269D51ED00BB844E /* CardValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC216CE9269D51ED00BB844E /* CardValue.swift */; };
 		DC241ACC2696F224001972AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC241ACB2696F224001972AE /* AppDelegate.swift */; };
 		DC241ACE2696F224001972AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC241ACD2696F224001972AE /* SceneDelegate.swift */; };
 		DC241AD02696F224001972AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC241ACF2696F224001972AE /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC216CE9269D51ED00BB844E /* CardValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValue.swift; sourceTree = "<group>"; };
 		DC241AC82696F224001972AE /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC241ACB2696F224001972AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC241ACD2696F224001972AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				DC241AD92696F225001972AE /* Info.plist */,
 				DC241ADF269711E3001972AE /* Set.swift */,
 				DC241AE226976428001972AE /* Card.swift */,
+				DC216CE9269D51ED00BB844E /* CardValue.swift */,
 			);
 			path = Set;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				DC241AE326976428001972AE /* Card.swift in Sources */,
 				DC241ACC2696F224001972AE /* AppDelegate.swift in Sources */,
 				DC241ACE2696F224001972AE /* SceneDelegate.swift in Sources */,
+				DC216CEA269D51ED00BB844E /* CardValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
